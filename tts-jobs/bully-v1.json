@@ -1,0 +1,13 @@
+{"name": "bully-v1", "items": [
+ {"id": "s01", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "一句玩笑、一次冷落，你以為沒什麼，對他來說，卻可能是每天的煎熬。"},
+ {"id": "s02", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "二零二六年七月起，職場霸凌防治正式入法。預防霸凌，是每家公司的責任。"},
+ {"id": "s03", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "當眾羞辱、威脅恐嚇、反覆貶低。"},
+ {"id": "s04", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "刻意冷落、孤立排擠、不給資訊。"},
+ {"id": "s05", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "超出合理範圍的要求，持續施壓、傷害身心，這些，都是職場霸凌。"},
+ {"id": "s06", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "但合理的工作指導，不是霸凌。界線在於，有沒有超出必要與合理。"},
+ {"id": "s07", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "看見了，不沉默；遇到了，記下時間、地點和對話內容。"},
+ {"id": "s08", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "向公司申訴管道提出；行為人是負責人時，可以向地方主管機關申訴，也能撥打一九五五諮詢。"},
+ {"id": "s09a", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "尊重，從每一句話開始。"},
+ {"id": "s09b", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "拒絕職場霸凌，我們一起守護。"},
+ {"id": "s10", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "職場不法侵害預防宣導與授課指導，歡迎洽詢勞動講師、職安顧問，陳宜億。"}
+]}
