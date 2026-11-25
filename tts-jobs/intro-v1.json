@@ -1,0 +1,10 @@
+{"name": "intro-v1", "items": [
+ {"id": "s1", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "大醫生技，用品質與科學，讓健康更容易，也更公道。"},
+ {"id": "s2", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "總部位於嘉義，我們以嚴謹的品質，打造值得信賴的健康產品。"},
+ {"id": "s3", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "我們堅持誠信、品質、創新、永續四大核心價值。"},
+ {"id": "s4", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "身為B型企業，產品包裝採用FSC認證，並長期推動全球兒童援助計畫。"},
+ {"id": "s5", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "透過「大醫生林」，我們希望一起為台灣種下兩千三百萬棵樹。"},
+ {"id": "s6", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "大醫生技，致力成為全球最具影響力的「健康與永續」企業。"},
+ {"id": "f1", "voice": "zh-TW-HsiaoChenNeural", "rate": "+0%", "text": "大家好，歡迎來到大醫生技。我們致力於守護每一位顧客的健康，用心做好每一件產品。"},
+ {"id": "f2", "voice": "zh-TW-HsiaoYuNeural", "rate": "+0%", "text": "大家好，歡迎來到大醫生技。我們致力於守護每一位顧客的健康，用心做好每一件產品。"}
+]}
