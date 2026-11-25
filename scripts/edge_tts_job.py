@@ -40,9 +40,17 @@ async def main(path, outdir):
     out = pathlib.Path(outdir) / name
     out.mkdir(parents=True, exist_ok=True)
     for it in items:
-        c = edge_tts.Communicate(it["text"], it["voice"], rate=it.get("rate", "+0%"))
-        await c.save(str(out / f"{it['id']}.mp3"))
+        for attempt in range(1, 7):          # the free service drops requests now and then
+            try:
+                c = edge_tts.Communicate(it["text"], it["voice"], rate=it.get("rate", "+0%"))
+                await c.save(str(out / f"{it['id']}.mp3"))
+                break
+            except edge_tts.exceptions.EdgeTTSException as e:
+                print(f"retry {it['id']} #{attempt}: {type(e).__name__}")
+                if attempt == 6: raise
+                await asyncio.sleep(3 * attempt)
         print(f"ok {it['id']}")
+        await asyncio.sleep(1.5)
     (out / "job.json").write_text(json.dumps({"name": name, "items": items},
                                   ensure_ascii=False, indent=1), encoding="utf-8")
     print(name)

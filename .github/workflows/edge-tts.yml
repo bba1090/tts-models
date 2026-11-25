@@ -19,12 +19,6 @@ jobs:
           python-version: "3.12"
       - name: Install edge-tts (pinned)
         run: pip install -q "edge-tts==7.3.1"
-      - name: Diagnose voice service
-        continue-on-error: true
-        run: |
-          edge-tts --list-voices | grep -i "zh-TW" || echo "no zh-TW voices listed"
-          edge-tts --voice en-US-AriaNeural --text "test" --write-media /tmp/t.mp3 && ls -la /tmp/t.mp3
-          edge-tts --voice zh-TW-YunJheNeural --text "測試" --write-media /tmp/z.mp3 && ls -la /tmp/z.mp3
       - name: Run jobs without a release yet
         env:
           GH_TOKEN: ${{ github.token }}
