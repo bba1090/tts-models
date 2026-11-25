@@ -1,0 +1,31 @@
+name: Fetch Breeze2-VITS model
+on:
+  push:
+    paths: [".github/workflows/fetch-breeze2.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download from Hugging Face
+        run: |
+          pip install -q huggingface_hub
+          python -c "from huggingface_hub import snapshot_download; snapshot_download('MediaTek-Research/Breeze2-VITS-onnx', local_dir='Breeze2-VITS-onnx')"
+          rm -rf Breeze2-VITS-onnx/.cache
+          ls -laR Breeze2-VITS-onnx
+          tar cjf breeze2-vits-onnx.tar.bz2 Breeze2-VITS-onnx
+          ls -la breeze2-vits-onnx.tar.bz2
+      - name: Publish as release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view breeze2-vits >/dev/null 2>&1; then
+            gh release upload breeze2-vits breeze2-vits-onnx.tar.bz2 --clobber
+          else
+            gh release create breeze2-vits breeze2-vits-onnx.tar.bz2 \
+              --title "Breeze2-VITS-onnx (private copy)" \
+              --notes "Mirror of MediaTek-Research/Breeze2-VITS-onnx for internal use. License not stated upstream; keep this repository private."
+          fi
