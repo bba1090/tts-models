@@ -1,0 +1,9 @@
+{"name": "intro-v2", "items": [
+ {"id": "s1", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "大醫生技，用品質與科學，讓健康更容易，也更公道。"},
+ {"id": "s2", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "從嘉義出發，我們在台北、高雄都有據點。"},
+ {"id": "s3", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "總部位於嘉義，以嚴謹的品質，打造值得信賴的健康產品。"},
+ {"id": "s4", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "我們堅持誠信、品質、創新、永續。"},
+ {"id": "s5", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "身為B型企業，產品包裝採用FSC認證，並長期推動全球兒童援助計畫。"},
+ {"id": "s6", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "透過大醫生林，我們希望一起為台灣種下兩千三百萬棵樹。"},
+ {"id": "s7", "voice": "zh-TW-YunJheNeural", "rate": "+0%", "text": "大醫生技，致力成為全球最具影響力的健康與永續企業。"}
+]}

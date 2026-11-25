@@ -1,0 +1,34 @@
+name: Fetch licensed stock files
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "batch name (a-z0-9-)"
+        required: true
+      items:
+        description: "JSON list of {id, kind, url}"
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Download and transcode
+        env:
+          STOCK_ITEMS: ${{ inputs.items }}
+        run: python3 scripts/stock_fetch.py
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BATCH: ${{ inputs.batch }}
+        run: |
+          set -euo pipefail
+          [[ "$BATCH" =~ ^[a-z0-9][a-z0-9-]{0,39}$ ]] || { echo "invalid batch"; exit 2; }
+          tar czf "stock-$BATCH.tar.gz" stock
+          ls -la "stock-$BATCH.tar.gz"
+          gh release create "stock-$BATCH" "stock-$BATCH.tar.gz" --title "Stock $BATCH" --notes "Licensed Adobe Stock (free) clips, transcoded 1080p. Internal use."
