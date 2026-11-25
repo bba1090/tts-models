@@ -13,7 +13,7 @@ items = json.loads(os.environ["STOCK_ITEMS"])
 if not isinstance(items, list) or not 1 <= len(items) <= MAX_ITEMS: fail("items")
 for it in items:
     if not (isinstance(it, dict) and ID_RE.match(str(it.get("id",""))) and
-            it.get("kind") in ("video","photo") and URL_RE.match(str(it.get("url","")))): fail("item")
+            it.get("kind") in ("video","photo","audio") and URL_RE.match(str(it.get("url","")))): fail("item")
     print(f"::add-mask::{it['url']}")          # keep signed URLs out of the log
 
 out = pathlib.Path("stock"); out.mkdir(exist_ok=True); raw = pathlib.Path("raw"); raw.mkdir(exist_ok=True)
@@ -29,6 +29,9 @@ for it in items:
         cmd = ["ffmpeg","-y","-loglevel","error","-i",str(src),"-t","15","-an",
                "-vf","scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30",
                "-c:v","libx264","-crf","20","-preset","veryfast","-pix_fmt","yuv420p",str(out/f"{it['id']}.mp4")]
+    elif it["kind"] == "audio":   # cap at 5 minutes, normalised format
+        cmd = ["ffmpeg","-y","-loglevel","error","-i",str(src),"-t","300","-vn","-ar","48000","-ac","2",
+               "-c:a","pcm_s16le",str(out/f"{it['id']}.wav")]
     else:
         cmd = ["ffmpeg","-y","-loglevel","error","-i",str(src),"-vf","scale=2880:-2","-q:v","3",str(out/f"{it['id']}.jpg")]
     subprocess.run(cmd, check=True)
