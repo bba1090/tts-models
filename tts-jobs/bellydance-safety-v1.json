@@ -1,0 +1,167 @@
+{
+ "name": "bellydance-safety-v1",
+ "items": [
+  {
+   "id": "h01",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "燈光亮起，音樂響起，肚皮舞的魅力，讓人忍不住跟著擺動。"
+  },
+  {
+   "id": "h02",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "但是你知道嗎？舞跳得美，更要跳得安全。"
+  },
+  {
+   "id": "h03",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "今天，就跟著職安專家陳宜億，用一支肚皮舞，看懂舞蹈裡的安全眉角。"
+  },
+  {
+   "id": "h04",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "熱情、專業、幽默又親切，他用最輕鬆的方式，帶你把安全跳進日常。"
+  },
+  {
+   "id": "h05",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "先來看看，這一身華麗的舞衣與舞台，藏了哪些風險。"
+  },
+  {
+   "id": "r1",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "第一，熱身不足。扭腰、擺臀、手臂高舉，都在考驗腰、髖、肩。跳之前做五到十分鐘動態熱身，循序漸進，不硬撐柔軟度。"
+  },
+  {
+   "id": "r2",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "第二，赤腳滑倒。地毯邊緣要固定，掉落的亮片和珠飾要撿乾淨，地面保持乾燥。"
+  },
+  {
+   "id": "r3",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "第三，飛紗纏繞。長紗巾不超過腳踝，旋轉前先收好，初學練習可以先不戴。"
+  },
+  {
+   "id": "r4",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "第四，配件勾刮。腰鍊流蘇、手環、臂環，跳之前檢查有沒有尖角或鬆脫，多人共舞保持間距。"
+  },
+  {
+   "id": "r5",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "第五，火源與燈具。紗巾碰到燭火，可能瞬間起火。舞區不放明火，燈具保持距離，先確認滅火器的位置。"
+  },
+  {
+   "id": "r6",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "第六，碰撞。手臂伸展的範圍內，不要有吊燈、擺飾或靠墊，跳之前先清出安全舞區。"
+  },
+  {
+   "id": "r7",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "第七，旋轉暈眩。練習定點轉頭，一感覺頭暈，馬上停下來坐好。"
+  },
+  {
+   "id": "r8",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "第八，脫水與過熱。燈光加上厚重舞衣，記得定時補水，服裝盡量透氣，身體不舒服就休息。"
+  },
+  {
+   "id": "h06",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "安全三步驟。跳前，評估場地、檢查服裝、做好熱身。跳時，保持距離、量力而為、適時補水。跳後，緩和伸展、整理場地。"
+  },
+  {
+   "id": "h07",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "萬一發生意外，記住五個動作：停止動作、確認安全；依傷勢處理；通報主管或職安窗口；記錄經過；檢討改善。"
+  },
+  {
+   "id": "h08",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "扭傷，記得保護、休息、冰敷、壓迫、抬高；割傷，先加壓止血；衣服著火，就停、躺、滾。"
+  },
+  {
+   "id": "h09",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "熱身、清場、收紗、查配件、遠離火源、留空間、防暈眩、多補水。八個重點，帶著走。"
+  },
+  {
+   "id": "h10",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "舞動有道，安全有度。讓每一次舞動，都美麗又安心。"
+  },
+  {
+   "id": "h11",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "想讓團隊安全又有活力？歡迎邀請職安專家陳宜億，授課指導。"
+  },
+  {
+   "id": "v01",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "舞跳得美，更要跳得安全！"
+  },
+  {
+   "id": "v02",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "跟著職安專家陳宜億，一分鐘看懂肚皮舞的八大安全重點。"
+  },
+  {
+   "id": "v03",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "熱身要足，舞區清空，地毯固定、亮片撿乾淨。"
+  },
+  {
+   "id": "v04",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "飛紗別太長，配件查尖角，遠離燭火與燈具。"
+  },
+  {
+   "id": "v05",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "轉圈防暈眩，定時補水不硬撐。"
+  },
+  {
+   "id": "v06",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "萬一受傷，記住：停止、處理、通報、記錄、改善。"
+  },
+  {
+   "id": "v07",
+   "voice": "zh-TW-YunJheNeural",
+   "rate": "+0%",
+   "text": "舞動有道，安全有度。"
+  },
+  {
+   "id": "v08",
+   "voice": "zh-TW-HsiaoChenNeural",
+   "rate": "+0%",
+   "text": "歡迎邀請職安專家陳宜億，授課指導。"
+  }
+ ]
+}
